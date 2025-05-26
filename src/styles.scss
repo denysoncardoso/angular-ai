@@ -1,4 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
-
+@use '@angular/material' as mat;
+:root {
+  @include mat.toolbar-overrides((
+    container-background-color: rgb(85, 85, 85),
+    container-text-color: rgb(48, 48, 48),
+  ));
+}
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

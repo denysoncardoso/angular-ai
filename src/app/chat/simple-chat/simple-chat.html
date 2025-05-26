@@ -1,0 +1,26 @@
+<mat-card class="chat-container">
+    <div>
+        <mat-toolbar>
+            <span class="title"> {{ title }} </span>
+        </mat-toolbar>
+    </div>
+    <div class="chat-history">
+        <div class="message">
+            @for (message of messages(); track message) {
+            <div class="message-buble">
+                {{ message.text }}
+            </div>
+            }
+        </div>
+    </div>
+
+    <div class="chat-input">
+        <mat-form-field class="full-width">
+            <mat-label>Digite sua mensagem</mat-label>
+            <input matInput>
+            <button mat-icon-button aria-label="Send" matSuffix>
+                <mat-icon>send</mat-icon>
+            </button>
+        </mat-form-field>
+    </div>
+</mat-card>

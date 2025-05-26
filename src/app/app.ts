@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterLink, RouterOutlet } from '@angular/router';
-import {MatToolbarModule} from '@angular/material/toolbar';
+import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIcon } from '@angular/material/icon';
 import { MatButton, MatIconButton } from '@angular/material/button';
 
@@ -10,10 +10,10 @@ import { MatButton, MatIconButton } from '@angular/material/button';
     RouterOutlet,
     RouterLink,
     MatToolbarModule,
-     MatIcon, 
-     MatIconButton,
-     MatButton
-    ],
+    MatIcon,
+    MatIconButton,
+    MatButton,
+  ],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
