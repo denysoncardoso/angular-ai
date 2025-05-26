@@ -14,13 +14,15 @@
         </div>
     </div>
 
-    <div class="chat-input">
-        <mat-form-field class="full-width">
-            <mat-label>Digite sua mensagem</mat-label>
-            <input matInput>
-            <button mat-icon-button aria-label="Send" matSuffix>
-                <mat-icon>send</mat-icon>
-            </button>
-        </mat-form-field>
-    </div>
+    <form [formGroup]="chatForm" (ngSubmit)="sendMessage()">
+        <div class="chat-input">
+            <mat-form-field class="full-width">
+                <mat-label>Digite sua mensagem</mat-label>
+                <input matInput formControlName="messageText">
+                <button mat-icon-button aria-label="Send" matSuffix type="submit">
+                    <mat-icon>send</mat-icon>
+                </button>
+            </mat-form-field>
+        </div>
+    </form>
 </mat-card>
